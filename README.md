@@ -20,4 +20,15 @@ export HISTCONTROL=ignoredups:erasedups
 # append to history file
 shopt -s histappend
 ```
-
+## shorten directory location
+displays `<username>@<hostname>:<current directory>$`
+  
+Replace the similar looking lines of code in .bashrc with the following:  
+```
+if [ "$color_prompt" = yes ]; then
+    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u\[\033[00m\]:\[\033[01;34m\]\W\[\033[00m\]\$ '
+else
+    PS1='${debian_chroot:+($debian_chroot)}\u:\W\$ '
+fi
+unset color_prompt force_color_prompt
+```
