@@ -6,3 +6,9 @@ Detect model and view recommended driver:
 `ubuntu-drivers devices`  
 Install recommended driver:  
 `sudo ubuntu-drivers autoinstall`
+
+## Remove trash, other visual fixes
+Install:  
+`sudo apt install gnome-tweak-tool`  
+run the gnome tweaks gui:  
+`gnome-tweaks`
