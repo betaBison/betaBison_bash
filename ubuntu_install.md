@@ -12,3 +12,6 @@ Install:
 `sudo apt install gnome-tweak-tool`  
 run the gnome tweaks gui:  
 `gnome-tweaks`
+
+## Force overwrite of conflicting package
+`sudo apt-get -o Dpkg::Options::="--force-overwrite" install <pkg_name>`
