@@ -15,3 +15,7 @@ run the gnome tweaks gui:
 
 ## Force overwrite of conflicting package
 `sudo apt-get -o Dpkg::Options::="--force-overwrite" install <pkg_name>`
+
+## Pip package location
+`pip3 install <pkg_name> --user`  
+The `--user` tag means that the package will be installed in `~/.local/bin`
