@@ -32,3 +32,8 @@ else
 fi
 unset color_prompt force_color_prompt
 ```
+## rename multiple files
+Setup:  
+`sudo apt install mmv`  
+use:  
+`mmv ~/old_name\* ~/new_name\#1`
