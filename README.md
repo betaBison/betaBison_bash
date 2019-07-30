@@ -37,3 +37,6 @@ Setup:
 `sudo apt install mmv`  
 use:  
 `mmv ~/old_name\* ~/new_name\#1`
+
+## restart system clock
+`sudo systemctl restart ntp`
