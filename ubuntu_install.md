@@ -19,3 +19,10 @@ run the gnome tweaks gui:
 ## Pip package location
 `pip3 install <pkg_name> --user`  
 The `--user` tag means that the package will be installed in `~/.local/bin`
+
+## Simple Screen Recorder
+```
+sudo add-apt-repository ppa:maarten-baert/simplescreenrecorder
+sudo apt-get update
+sudo apt-get install simplescreenrecorder
+```
