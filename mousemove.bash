@@ -3,5 +3,5 @@
 while true; do
     xte 'mousermove 1 1'
     xte 'mousermove -1 -1'
-    sleep 300
+    sleep 60
 done
