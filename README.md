@@ -3,16 +3,16 @@ simple bash solutions to problems
 
 ## mousemouse
 moves the mouse over and back a pixel every 5 minutes so monitior never sleeps.  
-  
+
 Install Dependencies:  
 `sudo apt install xautomation`  
-  
+
 Add the following to the end of .bashrc:   
 `~/<betaBison_bash repo location>/betaBison_bash/mousemove.bash &`
 
 ## common bash history
 creates common bash history among multiple termninals  
-  
+
 Add the following to the end of .bashrc:  
 ```
 # don't duplicate
@@ -22,7 +22,7 @@ shopt -s histappend
 ```
 ## shorten directory location
 displays `<username>@<hostname>:<current directory>$`
-  
+
 Replace the similar looking lines of code in .bashrc with the following:  
 ```
 if [ "$color_prompt" = yes ]; then
@@ -37,6 +37,3 @@ Setup:
 `sudo apt install mmv`  
 use:  
 `mmv ~/old_name\* ~/new_name\#1`
-
-## restart system clock
-`sudo systemctl restart ntp`
