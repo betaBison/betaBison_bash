@@ -45,3 +45,18 @@ git diff -p -R --no-color \
     | grep -E "^(diff|(old|new) mode)" --color=never  \
     | git apply
 ```
+
+## Add submodule
+```
+git submodule add -b <branch> <ssh-url-for-cloning> <path-to-place-save-including-repo-name>
+# e.g. git submodule add -b android-functionality git@github.com:Stanford-NavLab/gnss_lib_py.git lib/gnss_lib_py
+git submodule update --remote
+```
+
+## Remove submodule
+```
+git submodule deinit <path_to_submodule>
+git rm <path_to_submodule>
+git commit-m "Removed submodule "
+rm -rf .git/modules/<path_to_submodule>
+```
