@@ -11,6 +11,17 @@ git commit -m "<what changed in this commit>"
 git push
 ```
 
+## New branch
+```
+git checkout -b your-name/name-of-your-bugfix-or-feature
+git stash
+git pull
+git stash apply
+git add <files to add to commit>
+git commit -m "<describe changes in this commit>"
+git push origin your-name/name-of-your-bugfix-or-feature
+```
+
 ## Don't track specific files or folders
 Create a file called .gitignore in the main directory. Here's a common example of contents
 ```
