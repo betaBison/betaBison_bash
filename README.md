@@ -37,3 +37,8 @@ Setup:
 `sudo apt install mmv`  
 use:  
 `mmv ~/old_name\* ~/new_name\#1`
+
+## remove metadata from images
+```
+exiftool -all= inputfile
+```
